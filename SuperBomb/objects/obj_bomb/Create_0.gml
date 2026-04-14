@@ -1,3 +1,6 @@
-bombtype = 1 or 2 or 3 or 4
+bombtype = choose(1, 2, 3, 4)
 
-if bombtype = 1 {sprite_ }
+if bombtype = 1 {sprite_index = spr_bomb_1}
+if bombtype = 2 {sprite_index = spr_bomb_2}
+if bombtype = 3 {sprite_index = spr_bomb_3}
+if bombtype = 4 {sprite_index = spr_bomb_4}
