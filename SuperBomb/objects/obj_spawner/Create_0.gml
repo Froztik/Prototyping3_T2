@@ -1,2 +1,2 @@
-alarm_set(1,360)
+alarm_set(1,60)
 

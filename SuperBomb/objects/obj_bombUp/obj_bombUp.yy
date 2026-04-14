@@ -1,16 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bomb",
+  "%Name":"obj_bombUp",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":56,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_invisWall","path":"objects/obj_invisWall/obj_invisWall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bomb",
+  "name":"obj_bombUp",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -35,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bomb_1",
-    "path":"sprites/spr_bomb_1/spr_bomb_1.yy",
+    "name":"spr_bomb_4",
+    "path":"sprites/spr_bomb_4/spr_bomb_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,
