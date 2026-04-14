@@ -13,8 +13,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"SuperBomb",
-    "path":"SuperBomb.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
