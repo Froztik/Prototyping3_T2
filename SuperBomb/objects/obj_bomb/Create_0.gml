@@ -4,3 +4,6 @@ if bombtype = 1 {sprite_index = spr_bomb_1}
 if bombtype = 2 {sprite_index = spr_bomb_2}
 if bombtype = 3 {sprite_index = spr_bomb_3}
 if bombtype = 4 {sprite_index = spr_bomb_4}
+
+speed = 1;
+direction = -90;
