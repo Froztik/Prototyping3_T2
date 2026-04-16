@@ -45,5 +45,21 @@
 
 	}
 
+
+if keyboard_check_pressed(vk_space) && draw_cd == false {
+	instance_create_layer(mouse_x, mouse_y, "Instances2", obj_drawpoint_1)
+	draw += 1
+	alarm_set(0, 3)
+	//with instance_nearest(mouse_x, mouse_y, obj_drawpoint_1) {	
+	//	drawx = x;
+	//	drawy = y;
+	//}
+
+	draw_cd = true
+	alarm_set(1, 30) //cooldown
+		
+		
+		
 	
-	
+}
+
