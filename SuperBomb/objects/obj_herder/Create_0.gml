@@ -15,6 +15,7 @@ drawed_3 = false
 drawed_4 = false
 drawed_5 = false
 
+instancer = draw
 
 drawx = 0;
 drawy = 0;

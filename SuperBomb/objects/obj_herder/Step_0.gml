@@ -63,3 +63,4 @@ if keyboard_check_pressed(vk_space) && draw_cd == false {
 	
 }
 
+instancer = draw

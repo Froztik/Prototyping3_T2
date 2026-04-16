@@ -16,3 +16,10 @@ draw_set_color(c_fuchsia)
 	//	20) 	
 	//}
 	
+	if draw > 0 {
+	draw_line_width_color(instance_find(obj_drawpoint_1, (instancer - 1)).x,
+						instance_find(obj_drawpoint_1, (instancer -1)).y,
+						instance_find(obj_drawpoint_1, instancer).x,
+						instance_find(obj_drawpoint_1, instancer).y,
+						20, c_aqua, c_gray)
+	}
