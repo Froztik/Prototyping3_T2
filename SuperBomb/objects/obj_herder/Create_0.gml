@@ -1,14 +1,6 @@
 
+element_on = true //is in element swap state, should always be on
 
-element_on = true
-
-//started = true
-
-//_f = false
-//_w  = false
-//_l = false
-//_e  = false
-
-element = 0
+element = 0 //which element is active
 
 
