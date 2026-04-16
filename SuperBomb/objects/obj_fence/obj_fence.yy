@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_crosshair",
+  "%Name":"obj_fence",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_crosshair",
+  "name":"obj_fence",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_crosshair",
-    "path":"sprites/spr_crosshair/spr_crosshair.yy",
+    "name":"spr_fence",
+    "path":"sprites/spr_fence/spr_fence.yy",
   },
   "spriteMaskId":null,
   "visible":true,

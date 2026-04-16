@@ -1,7 +1,9 @@
+if (array_length(obj_gamepads.gamepads) > 0) {
+	
 
 //switching element mode
 	//step left on input
-	if keyboard_check_pressed(vk_left) {
+	if gamepad_button_check_pressed(0, gp_shoulderl) {
 		if (element == 0){
 			element = 3
 		}
@@ -12,7 +14,7 @@
 	}
 
 	//step right on input
-	if keyboard_check_pressed(vk_right){
+	if gamepad_button_check_pressed(0, gp_shoulderr){
 		if (element == 3){
 			element = 0
 		}
@@ -46,21 +48,55 @@
 	}
 
 
-if keyboard_check_pressed(vk_space) && draw_cd == false {
-	instance_create_layer(mouse_x, mouse_y, "Instances2", obj_drawpoint_1)
-	draw += 1
-	alarm_set(0, 3)
-	//with instance_nearest(mouse_x, mouse_y, obj_drawpoint_1) {	
-	//	drawx = x;
-	//	drawy = y;
-	//}
 
+
+if gamepad_button_check_pressed(0, gp_face1) && draw_cd == false {
+	_x = round(obj_crosshair.x / 64) * 64;
+	_y = round(obj_crosshair.y / 64) * 64;
+	
+	validPlacement = 1;
+	
+	with (obj_drawpoint_1)
+	{
+		if (!(x == other._x or y == other._y))
+		{
+			other.validPlacement -= 1/instance_number(obj_drawpoint_1);
+		}
+	}
+	
+	if (validPlacement >= 0.5) {
+		instance_create_layer(_x, _y, "Instances2", obj_drawpoint_1);
+		
+		if (instance_number(obj_drawpoint_1) == 4) {
+			// Make fences
+			with (obj_drawpoint_1) {
+				// To all connecting points
+				with (obj_drawpoint_1) {
+					if (x == other.x or y == other.y)
+					{
+						// Place fences between the points
+						for (var i = 0; i < point_distance(other.x, other.y, x, y) / 64; i++)
+						{
+							var _xx = x + (sign(other.x - x) * i * 64),
+								_yy = y + (sign(other.y - y) * i * 64);
+							
+							if (!instance_place(_xx, _yy, obj_fence)) // unless the other point already placed a fence there
+							{
+								instance_create_layer(_xx, _yy, layer, obj_fence);
+							}
+						}
+					}
+				}
+			}
+			// Remove drawpoints
+			instance_destroy(obj_drawpoint_1);
+		}
+	}
 	draw_cd = true
 	alarm_set(1, 30) //cooldown
-		
-		
-		
-	
 }
 
 instancer = draw
+
+
+}

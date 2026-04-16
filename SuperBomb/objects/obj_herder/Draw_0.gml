@@ -1,4 +1,4 @@
-
+/*
 draw_set_color(c_fuchsia)
 	if drawing = true {
 		draw_line_width(obj_drawpoint_1.x, obj_drawpoint_1.y, obj_crosshair.x, obj_crosshair.y, 20) 
