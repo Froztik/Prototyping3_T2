@@ -1,15 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ui_earth",
+  "%Name":"obj_spawntop",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ui_earth",
+  "name":"obj_spawntop",
   "overriddenProperties":[],
   "parent":{
-    "name":"ui_elements",
-    "path":"folders/Objects/ui_elements.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ui_earth",
-    "path":"sprites/spr_ui_earth/spr_ui_earth.yy",
+    "name":"spr_spawner",
+    "path":"sprites/spr_spawner/spr_spawner.yy",
   },
   "spriteMaskId":null,
   "visible":true,
