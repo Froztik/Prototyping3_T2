@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bomb_5",
-    "path":"sprites/spr_bomb_5/spr_bomb_5.yy",
+    "name":"spr_bomb_4",
+    "path":"sprites/spr_bomb_4/spr_bomb_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,
