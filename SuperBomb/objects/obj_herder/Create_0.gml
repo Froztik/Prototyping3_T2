@@ -20,3 +20,6 @@ instancer = draw
 drawx = 0;
 drawy = 0;
 
+
+global.score = 0
+

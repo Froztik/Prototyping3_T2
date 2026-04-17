@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bombUp",
+  "%Name":"obj_bombup_f",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":56,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bombUp",
+  "name":"obj_bombup_f",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bomb_4",
-    "path":"sprites/spr_bomb_4/spr_bomb_4.yy",
+    "name":"spr_bomb_1",
+    "path":"sprites/spr_bomb_1/spr_bomb_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

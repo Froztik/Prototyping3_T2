@@ -68,32 +68,61 @@ if gamepad_button_check_pressed(0, gp_face1) && draw_cd == false {
 		instance_create_layer(_x, _y, "Instances2", obj_drawpoint_1);
 		
 		if (instance_number(obj_drawpoint_1) == 4) {
-			// Make fences
-			with (obj_drawpoint_1) {
-				// To all connecting points
-				with (obj_drawpoint_1) {
-					if (x == other.x or y == other.y)
-					{
-						// Place fences between the points
-						for (var i = 0; i < point_distance(other.x, other.y, x, y) / 64; i++)
-						{
-							var _xx = x + (sign(other.x - x) * i * 64),
-								_yy = y + (sign(other.y - y) * i * 64);
-							
-							if (!instance_place(_xx, _yy, obj_fence)) // unless the other point already placed a fence there
-							{
-								instance_create_layer(_xx, _yy, layer, obj_fence);
-							}
-						}
-					}
+			
+			var _fencetop = instance_nearest(0, 0, obj_drawpoint_1)  // Hitta den övre vänstraste
+			var _fencebot = instance_nearest(room_width, room_height, obj_drawpoint_1)// Hitta den undre högraste
+			
+			var _goobers = ds_list_create();
+			
+			switch (element) {
+				case 0: collision_rectangle_list(_fencetop.bbox_left, _fencetop.bbox_top, _fencebot.bbox_right, _fencebot.bbox_bottom, obj_bomb_f, true, true, _goobers, false); break;
+				case 1: collision_rectangle_list(_fencetop.bbox_left, _fencetop.bbox_top, _fencebot.bbox_right, _fencebot.bbox_bottom, obj_bomb_w, true, true, _goobers, false); break;
+				case 2: collision_rectangle_list(_fencetop.bbox_left, _fencetop.bbox_top, _fencebot.bbox_right, _fencebot.bbox_bottom, obj_bomb_l, true, true, _goobers, false); break;
+				case 3: collision_rectangle_list(_fencetop.bbox_left, _fencetop.bbox_top, _fencebot.bbox_right, _fencebot.bbox_bottom, obj_bomb_e, true, true, _goobers, false); break;
+			}
+			
+			var _antalGoobers = ds_list_size(_goobers);
+			
+			if  (_antalGoobers > 0)
+			{
+				for (var i = 0; i < _antalGoobers; i++)
+				{
+					global.score += 10
+			
+					instance_destroy(ds_list_find_value(_goobers, i))
+					
 				}
 			}
+			// Make fences
+			//with (obj_drawpoint_1) {
+			//	// To all connecting points
+			//	with (obj_drawpoint_1) {
+			//		if (x == other.x or y == other.y)
+			//		{
+			//			// Place fences between the points
+			//			for (var i = 0; i < point_distance(other.x, other.y, x, y) / 64; i++)
+			//			{
+			//				var _xx = x + (sign(other.x - x) * i * 64),
+			//					_yy = y + (sign(other.y - y) * i * 64);
+							
+			//				if (!instance_place(_xx, _yy, obj_fence)) // unless the other point already placed a fence there
+			//				{
+			//					instance_create_layer(_xx, _yy, layer, obj_fence);
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
 			// Remove drawpoints
 			instance_destroy(obj_drawpoint_1);
+			
+	
+			
 		}
 	}
 	draw_cd = true
 	alarm_set(1, 30) //cooldown
+	
 }
 
 instancer = draw

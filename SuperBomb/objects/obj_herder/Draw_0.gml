@@ -1,3 +1,9 @@
+
+draw_self()
+draw_set_font(fnt_score)
+draw_text_color(1100, 40, "Score:"+string(global.score), c_white, c_white, c_white, c_white, 1)
+
+
 /*
 draw_set_color(c_fuchsia)
 	if drawing = true {
