@@ -9,4 +9,5 @@ speed = 1;
 //direction = choose(-90, -45, -67.5, -112.5, -135);
 ogDir = direction;
 bombUp = false;
+alarm_set(1,240);
 //bombPicked = false;
