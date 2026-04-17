@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"SuperBomb",
   "resources":[
@@ -45,8 +45,7 @@
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_herder","path":"objects/obj_herder/obj_herder.yy",},},
     {"id":{"name":"obj_invisWall","path":"objects/obj_invisWall/obj_invisWall.yy",},},
-    {"id":{"name":"obj_spawntop","path":"objects/obj_spawntop/obj_spawntop.yy",},},
-    {"id":{"name":"obj_spawnbot","path":"objects/obj_spawnbot/obj_spawnbot.yy",},},
+    {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_ui_earth","path":"objects/obj_ui_earth/obj_ui_earth.yy",},},
     {"id":{"name":"obj_ui_fire","path":"objects/obj_ui_fire/obj_ui_fire.yy",},},
     {"id":{"name":"obj_ui_life","path":"objects/obj_ui_life/obj_ui_life.yy",},},
