@@ -114,7 +114,7 @@ if gamepad_button_check_pressed(0, gp_face1) && draw_cd == false {
 			//	}
 			//}
 			// Remove drawpoints
-			instance_destroy(obj_drawpoint_1);
+			alarm_set(2, 20);
 			
 	
 			

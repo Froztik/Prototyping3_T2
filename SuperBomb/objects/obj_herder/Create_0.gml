@@ -23,3 +23,4 @@ drawy = 0;
 
 global.score = 0
 
+fence_opacity = 90

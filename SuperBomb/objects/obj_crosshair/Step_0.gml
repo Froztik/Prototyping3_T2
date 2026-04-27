@@ -9,6 +9,23 @@ hspeed = h_speed
 vspeed = v_speed
 //movement
 
+}
 
+switch (obj_herder.element) {
+	case 0:
+		sprite_index = spr_crosshair_fire
+			break
+		case 1:
+		sprite_index = spr_crosshair_water
+			break
+		case 2:
+		sprite_index = spr_crosshair_life
+			break
+		case 3:
+		sprite_index = spr_crosshair_earth
+			break
+}
 
+if instance_exists(obj_drawpoint_1) {
+	
 }
