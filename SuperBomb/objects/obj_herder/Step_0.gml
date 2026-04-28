@@ -50,7 +50,8 @@ if (array_length(obj_gamepads.gamepads) > 0) {
 
 
 
-if gamepad_button_check_pressed(0, gp_face1) && draw_cd == false {
+if (gamepad_button_check_pressed(0, gp_face1) or keyboard_check_pressed(vk_space)) && draw_cd == false {
+	show_debug_message("ff")
 	_x = round(obj_crosshair.x / 64) * 64;
 	_y = round(obj_crosshair.y / 64) * 64;
 	

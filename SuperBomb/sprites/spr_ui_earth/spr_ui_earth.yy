@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"herder_ui",
+    "path":"folders/Sprites/herder_ui.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
